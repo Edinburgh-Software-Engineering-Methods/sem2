@@ -1,7 +1,7 @@
-FROM openjdk:latest
-COPY ./target/classes/com /tmp/com
-WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.sem.App"]
+FROM ubuntu:latest
+LABEL authors="murad"
+
+ENTRYPOINT ["top", "-b"]
 # Use the latest MySQL image
 FROM mysql
 # Set the working directory
